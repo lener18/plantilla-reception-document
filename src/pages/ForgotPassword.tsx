@@ -1,6 +1,4 @@
-import React from "react";
-import Link from "next/link";
-
+import { Link } from "react-router-dom";
 
 export default function ForgotPassword() {
   return (
@@ -33,7 +31,7 @@ export default function ForgotPassword() {
           <div className="flex flex-col items-center justify-center px-4 md:px-24">
             <div className="w-full max-w-md space-y-10">
               <div className="space-y-2">
-                <Link href="/login" className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-200">
+                <Link to="/login" className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-200">
                   <span className="material-symbols-outlined text-[20px]">arrow_back</span>
                   <span className="text-sm font-label">Volver al inicio de sesión</span>
                 </Link>

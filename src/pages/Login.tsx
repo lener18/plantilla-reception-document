@@ -1,6 +1,4 @@
-import React from "react";
-import Link from "next/link";
-
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -44,7 +42,7 @@ export default function Login() {
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <label className="block font-label text-sm font-semibold text-on-surface" htmlFor="password">Contraseña</label>
-                <Link href="/forgot-password" className="text-sm font-medium text-primary hover:text-primary-container transition-colors">
+                <Link to="/forgot-password" className="text-sm font-medium text-primary hover:text-primary-container transition-colors">
                   ¿Olvidó su contraseña?
                 </Link>
               </div>
@@ -72,7 +70,7 @@ export default function Login() {
             </div>
 
             {/* Sign In Button */}
-            <Link href="/dashboard" className="block w-full">
+            <Link to="/dashboard" className="block w-full">
               <button
                 className="w-full h-12 bg-gradient-to-br from-primary to-primary-container text-white font-headline font-bold rounded-lg shadow-lg hover:shadow-xl active:scale-[0.98] transition-all duration-200"
                 type="button"

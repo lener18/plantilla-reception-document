@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-
+import { Link } from "react-router-dom";
 
 export default function TopAppBar({ breadcrumbs }: { breadcrumbs: { label: string, href?: string }[] }) {
   return (
@@ -11,7 +10,7 @@ export default function TopAppBar({ breadcrumbs }: { breadcrumbs: { label: strin
             <React.Fragment key={idx}>
               {idx > 0 && <span className="material-symbols-outlined text-[14px]">chevron_right</span>}
               {bc.href ? (
-                <Link href={bc.href} className="hover:text-primary transition-colors">
+                <Link to={bc.href} className="hover:text-primary transition-colors">
                   {bc.label}
                 </Link>
               ) : (

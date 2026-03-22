@@ -1,5 +1,4 @@
-import React from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function NewPassword() {
   return (
@@ -75,7 +74,7 @@ export default function NewPassword() {
               </div>
 
               <div className="text-center pt-4">
-                <Link href="/login" className="text-primary text-sm font-semibold hover:underline inline-flex items-center gap-1">
+                <Link to="/login" className="text-primary text-sm font-semibold hover:underline inline-flex items-center gap-1">
                   <span className="material-symbols-outlined text-[18px]">chevron_left</span>
                   Volver al inicio de sesión
                 </Link>

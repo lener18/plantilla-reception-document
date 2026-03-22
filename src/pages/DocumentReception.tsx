@@ -1,7 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import SideNavBar from "@/components/SideNavBar";
-import TopAppBar from "@/components/TopAppBar";
+import { Link } from "react-router-dom";
+import SideNavBar from "../components/SideNavBar";
+import TopAppBar from "../components/TopAppBar";
 
 export default function DocumentReception() {
   const breadcrumbs = [
@@ -153,7 +152,7 @@ export default function DocumentReception() {
                     </td>
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-2">
-                        <Link href="/document-detail" className="p-2 text-primary hover:bg-primary/5 rounded-lg transition-colors" title="Ver Detalle">
+                        <Link to="/document-detail" className="p-2 text-primary hover:bg-primary/5 rounded-lg transition-colors" title="Ver Detalle">
                           <span className="material-symbols-outlined">visibility</span>
                         </Link>
                         <div className="relative group">

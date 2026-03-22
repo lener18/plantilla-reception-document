@@ -1,6 +1,6 @@
-import React from "react";
-import SideNavBar from "@/components/SideNavBar";
-import TopAppBar from "@/components/TopAppBar";
+
+import SideNavBar from "../components/SideNavBar";
+import TopAppBar from "../components/TopAppBar";
 
 export default function DocumentDetail() {
   const breadcrumbs = [

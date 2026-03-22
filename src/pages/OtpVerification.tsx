@@ -1,5 +1,4 @@
-import React from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function OtpVerification() {
   return (
@@ -67,7 +66,7 @@ export default function OtpVerification() {
           </div>
 
           <div className="mt-8 flex justify-center space-x-6">
-            <Link href="/login" className="text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">
+            <Link to="/login" className="text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">
               Volver al inicio de sesión
             </Link>
           </div>
